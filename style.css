@@ -40,17 +40,39 @@ body {
     border-radius: 8px;
     padding: 0.9rem 1rem;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: inherit;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: -0.01em;
+    text-align: left;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
     min-width: 0;
+}
+
+.label { display: block; }
+
+.tagline {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    opacity: 0.65;
+    margin-top: 2px;
+
 }
 .brand {
     background: var(--fg);
     color: var(--bg);
     font-size: 1.35rem;
     letter-spacing: -0.02em;
+}
+.brand .tagline {
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
 }
 /* row 1 */
 .row:nth-child(1) > .cell:nth-child(1) {flex: 2;}
