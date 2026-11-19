@@ -1,9 +1,18 @@
 /* colors */
 :root {
+    color-scheme:dark;
     --bg: #06171a;
     --cell: #17515c;
     --fg: #cfeee8;
     --accent: #3f3cd5;
+}
+:root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #eef7f5;
+    --cell: #d3e9e5;
+    --fg: #08201f;
+    --accent: $2f2ab8;
+    --on-accent: #ffffff;
 }
 
 *,
@@ -128,4 +137,5 @@ body {
     .brand {
         min-height: 7rem;
     }
+
 }
