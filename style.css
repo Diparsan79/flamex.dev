@@ -139,3 +139,75 @@ body {
     }
 
 }
+
+
+/* inner pages */
+.page .bar {
+    display: flex;
+    gap: 0.5rem;
+    flex: none;
+}
+
+.page .bar .cell {
+    flex: 1;
+    min-height: 0;
+    justify-content: center;
+    padding: 0.7rem 1rem;
+}
+
+.page .bar .toggle {
+    flex:none;
+    width:4rem;
+}
+.about-page .about-card {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: 20rem;
+    font-weight: 400;
+    cursor: default;
+}
+
+.about-pfp {
+    width: 11rem;
+    aspect-ratio: 400 / 506;
+    height: auto;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 3px solid var(--fg);
+    flex-shrink: 0;
+}
+
+.about-text h1 {
+    margin: 0 0 0.6rem;
+    font-size: 1.6rem;
+    letter-spacing: -0.02em;
+}
+
+.about-text p {
+    margin: 0 0 0.4rem;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 34ch;
+}
+
+@media (max-width: 600px) {
+    .about-page .about-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+    .about-pfp {
+    width: 11rem;
+    aspect-ratio: 400 / 506;
+    height: auto;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 3px solid var(--fg);
+    flex-shrink: 0;
+    }
+}
+

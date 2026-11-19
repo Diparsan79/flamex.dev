@@ -4,8 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projects</title>
+        <script>
+            try {
+                document.documentElement.dataset.theme =
+                    localStorage.getItem("theme") === "light" ? "light" : "dark";
+            } catch (e) {}
+        </script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>Projects...</p>
+        <main class="bento page">
+            <div class="bar">
+                <a class="cell" href="index.html">
+                    <span class="label">← Home</span>
+                </a>
+                <button class="cell toggle" type="button" aira-label="Switch color theme">◐</button>
+            </div>
+
+            <section class="projects">
+                <div class="cell project">
+                    <span class="label">ARC(study timer)</span>
+                    <p class="project-desc">Study session logger with a live timer, streaks and charts. Hosted on Nest.</p>
+                    <ul class="tags"><li>FastAPI</li><li>PostgreSQL</li><li>Chart.js</li></ul>
+                </div>
+
+                <div class="cell project">
+                    <span class="label">LIT</span>
+                    <p class="project-desc">Letterboxd in the terminal. A local based movie diary with TMDB lookup and tracking.</p>
+                    <ul class="tags"><li>Python</li><li>Rich</li><li>TMDB API</li></ul>
+                </div>
+
+                <div class="cell project">
+                    <span class="label">Placeholder , incase i make something fire later</span>
+                </div>
+            </section>
+        </main>
+        <script src="script.js" defer></script>
     </body>
 </html>

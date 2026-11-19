@@ -4,8 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me</title>
+            <script>
+            try {
+                document.documentElement.dataset.theme =
+                    localStorage.getItem("theme") === "light" ? "light" : "dark";
+            } catch (e) {}
+        </script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>About me...</p>
+        <main class="bento page about-page">
+            <div class="bar">
+                <a class="cell" href="index.html">
+                    <span class="label">← Home</span>
+                </a>
+                <button class="cell toggle" type="button" aria-label="Switch color theme">◐</button>
+            </div>
+
+            <section class="cell about-card">
+                <img class="about-pfp" src="avatar.jpg" alt="flamex">
+                <div class="about-text">
+                    <h1>About me</h1>
+                    <p>Hi i'm flamex, a highschooler, programmer and a movie nerd from Nepal. I'm interested in programming, robotics and the kind of maths and physics that makes you stare at the ceiling.</p>
+                    <br>
+                    <p>Currently I am focusing on competitive programming concepts and building some cool softwares like web-based study timer, terminal based movie logger and so on.</p>
+                </div>
+            </section>
+        </main>
+    <script src="script.js"></script>
     </body>
 </html>
