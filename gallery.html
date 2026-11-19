@@ -4,8 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gallery</title>
+        <script>
+            try {
+                document.documentElement.dataset.theme =
+                    localStorage.getItem("theme") === "light" ? "light" : "dark";
+            } catch (e) {}
+        </script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>Gallery...</p>
+        <main class="bento page gallery-page">
+            <div class="bar">
+                <a class="cell" href="index.html">
+                    <span class="label">← Home</span>
+                </a>
+                <button class="cell toggle" type="button" aria-label="Switch color theme">◐</button>
+            </div>
+
+            <section class="gallery">
+                <img src="imgs/img1.webp"  width="1080" height="1080" alt="Photo 1">
+                <img src="imgs/img2.webp"  width="1080" height="1080" alt="Photo 2">
+                <img src="imgs/img3.webp"  width="1080" height="1080" alt="Photo 3">
+                <img src="imgs/img4.jpg"   width="4000" height="3000" loading="lazy" decoding="async" alt="Photo 4">
+                <img src="imgs/img5.jpg"   width="2448" height="3264" loading="lazy" decoding="async" alt="Photo 5">
+                <img src="imgs/img6.jpg"   width="3000" height="4000" loading="lazy" decoding="async" alt="Photo 6">
+                <img src="imgs/img7.jpg"   width="2448" height="3264" loading="lazy" decoding="async" alt="Photo 7">
+                <img src="imgs/img8.jpg"   width="3000" height="4000" loading="lazy" decoding="async" alt="Photo 8">
+                <img src="imgs/img9.jpg"   width="3000" height="4000" loading="lazy" decoding="async" alt="Photo 9">
+                <img src="imgs/img10.jpg"  width="3000" height="4000" loading="lazy" decoding="async" alt="Photo 10">
+                <img src="imgs/img11.jpg"  width="2448" height="3264" loading="lazy" decoding="async" alt="Photo 11">
+                <img src="imgs/img12.jpg"  width="3000" height="4000" loading="lazy" decoding="async" alt="Photo 12">
+                <img src="imgs/img13.jpg"  width="3000" height="4000" loading="lazy" decoding="async" alt="Photo 13">
+                <img src="imgs/img14.jpg"  width="3000" height="4000" loading="lazy" decoding="async" alt="Photo 14">
+                <img src="imgs/img15.jpg"  width="4000" height="3000" loading="lazy" decoding="async" alt="Photo 15">
+                <img src="imgs/img16.jpg"  width="1520" height="720"  loading="lazy" decoding="async" alt="Photo 16">
+                <img src="imgs/img17.jpg"  width="1080" height="1120" loading="lazy" decoding="async" alt="Photo 17">
+                <img src="imgs/img18.jpg"  width="1080" height="1226" loading="lazy" decoding="async" alt="Photo 18">
+                <img src="imgs/img19.jpg"  width="2400" height="1080" loading="lazy" decoding="async" alt="Photo 19">
+                <img src="imgs/img20.jpg"  width="1080" height="902"  loading="lazy" decoding="async" alt="Photo 20">
+            </section>
+        </main>
+        <script src="script.js" defer></script>
     </body>
 </html>
