@@ -294,3 +294,99 @@ body {
         columns: 2;
     }
 }
+
+/* contact page */
+.contact {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-height: 0;
+}
+.contact .contact-link {
+    flex: 1;
+    justify-content: center;
+    padding: 1rem 1.2rem;
+}
+
+.contact .contact-link .label {
+    font-size: 1.3rem;
+    letter-spacing: -0.02rem;
+}
+.contact .contact-link .tagline {
+    font-size: 0.85rem;
+}
+
+.contact .contact-link:hover,
+.contact .contact-link:focus-visible {
+    background: var(--fg);
+    color: var(--bg);
+}
+
+@media (max-width: 600px) {
+    .contact .contact-link {
+        flex: none;
+        min-height: 5.5rem;
+    }
+}
+
+/* watchlist page */
+.watchlist-page {
+    height: auto;
+    min-height: 100dvh;
+}
+
+.watchlist {
+    flex:1;
+    justify-content: flex-start;
+    font-weight: 400;
+    cursor: default;
+    padding: 1.5rem;
+}
+.watchlist h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: -0.02em;
+}
+
+.watch-count {
+    margin: 0.3rem 0 1.2rem;
+    font-size: 0.8rem;
+    opacity: 0.65;
+}
+.watch-list {
+    columns: 3;
+    column-gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.watch-list li {
+    break-inside: avoid;
+    padding: 0.3rem 0;
+    line-height: 1.35;
+}
+
+.watch-list a {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+.watch-list a:hover,
+.watch-list a:focus-visible {
+    text-decoration: underline;
+}
+
+.watch-list .year {
+    opacity: 0.6;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+    .watchlist { columns: 2;}
+}
+
+@media (max-width: 600px) {
+    .watchlist { padding: 1.2rem 1rem;}
+    .watch-list { columns: 1;}
+}
