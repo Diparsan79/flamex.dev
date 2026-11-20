@@ -1,9 +1,9 @@
 {
   "lastfm": {
-    "track": "Disco",
-    "artist": "Surf Curse",
-    "url": "https://www.last.fm/music/Surf+Curse/_/Disco",
-    "nowplaying": true
+    "track": "Swing Lynn",
+    "artist": "Harmless",
+    "url": "https://www.last.fm/music/Harmless/_/Swing+Lynn",
+    "nowplaying": false
   },
   "letterboxd": {
     "title": "Fallen Angels",
@@ -11,5 +11,5 @@
     "rating": "4.0",
     "url": "https://letterboxd.com/flamexgod/film/fallen-angels/"
   },
-  "updated": "2026-11-20T08:50:50Z"
+  "updated": "2026-11-20T17:29:12Z"
 }
