@@ -30,7 +30,7 @@ if (lastfmTag || lbTag) {
             }
             if (lbTag && d.letterboxd) {
                 const { title, year, rating } = d.letterboxd;
-                lbTag.textContent = `Last watched: ${title}${year ? ` (${year})` : ""}${stars(rating)}`;
+                lbTag.textContent = `Last watched: ${title}${year ? ` (${year})` : ""}`;
             }
         })
         .catch(() => {});
