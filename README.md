@@ -6,4 +6,4 @@ I've always made many ai-generated websites and mostly personal websites and not
 
 The site contains the following features:
 1. Home page
-! [homepage] (images/landing.png)
+![Home page](images/landing.png)
