@@ -12,7 +12,7 @@ button.addEventListener("click", () => {
 
 /* live data for homepage */
 const lastfmTag = document.getElementById("lastfm-tag");
-const lbTag = document.getElementById("lb-Tag");
+const lbTag = document.getElementById("lb-tag");
 
 function stars(rating) {
     const n = parseFloat(rating);
